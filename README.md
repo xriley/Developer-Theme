@@ -14,6 +14,17 @@ This Bootstrap template is made by UX/UI designer [Xiaoying Riley](https://twitt
 
 If you'd like to **use the template without the attribution**, you can check out **other license options** via the [theme website](http://themes.3rdwavemedia.com/website-templates/free-responsive-website-template-for-developers/)
 
+####Follow Xiaoying
+
+[Twitter](https://twitter.com/3rdwave_themes)
+
+[Facebook](https://www.facebook.com/3rdwavethemes/)
+
+[Dribbble](https://dribbble.com/Xiaoying)
+
+[Linkedin](https://uk.linkedin.com/in/xiaoying)
+
+
 ##Latest Version
 **v1.5** - 07 Jan 2016
 
