@@ -1,8 +1,8 @@
 ##Theme Details & Demo
 
-![responsive-html5-css3-website-template-for-developers](https://cloud.githubusercontent.com/assets/908145/12189207/b531150c-b5f6-11e5-974f-a323f2d7fc28.png)
+[![responsive-html5-css3-website-template-for-developers](https://cloud.githubusercontent.com/assets/908145/12189207/b531150c-b5f6-11e5-974f-a323f2d7fc28.png)](http://themes.3rdwavemedia.com/website-templates/free-responsive-website-template-for-developers/)
 
-Demo: http://themes.3rdwavemedia.com/website-templates/free-responsive-website-template-for-developers/
+Details: http://themes.3rdwavemedia.com/website-templates/free-responsive-website-template-for-developers/
 
 Developer theme is a free responsive website template designed to **help developers promote their work**. 
 It can be used as a **professional portal** to your other online portfolios or websites (eg. Linkedin, CoderWall, Blog, GitHub etc) **in a modular fashion**. 
