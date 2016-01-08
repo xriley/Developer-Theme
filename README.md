@@ -1,5 +1,7 @@
 ##Theme Details & Demo
 
+![responsive-html5-css3-website-template-for-developers](https://cloud.githubusercontent.com/assets/908145/12189207/b531150c-b5f6-11e5-974f-a323f2d7fc28.png)
+
 Demo: http://themes.3rdwavemedia.com/website-templates/free-responsive-website-template-for-developers/
 
 Developer theme is a free responsive website template designed to **help developers promote their work**. 
