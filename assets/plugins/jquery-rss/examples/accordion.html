@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jquery.rss accordion example</title>
+
+    <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css">
+
+    <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <script src="../src/jquery.rss.js"></script>
+
+    <script>
+      jQuery(function($) {
+        $("#rss-feeds")
+          .hide()
+          .rss("http://feeds.feedburner.com/dawanda", {
+            limit: 15,
+            effect: 'slideFastSynced',
+            layoutTemplate: '{entries}',
+            entryTemplate: '<h3>{title}</h3><div><p>{bodyPlain}</p></div>'
+          }, function() {
+            $("#rss-feeds")
+              .show()
+              .find('> div')
+              .accordion({ heightStyle: 'content' })
+          })
+      })
+    </script>
+
+    <style>
+      body {
+        font-size: 62.5%;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>jquery.rss example</h1>
+      <div id="rss-feeds"></div>
+    </div>
+  </body>
+</html>
