@@ -1,0 +1,17 @@
+{
+  "name": "developer-theme",
+  "description": "Personal portfolio website development.",
+  "main": "index.js",
+  "authors": [
+    "sudhanshu singh chauhan"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/minimal-crap/Developer-Theme",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
