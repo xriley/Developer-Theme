@@ -1,0 +1,22 @@
+{
+  "name": "developer-theme",
+  "version": "1.0.0",
+  "description": "Personal portfolio website development.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/minimal-crap/Developer-Theme.git"
+  },
+  "author": "sudhanshu singh chauhan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/minimal-crap/Developer-Theme/issues"
+  },
+  "homepage": "https://github.com/minimal-crap/Developer-Theme#readme",
+  "dependencies": {
+    "bower": "^1.8.0"
+  }
+}
