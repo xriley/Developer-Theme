@@ -49,7 +49,10 @@
                     <li class="last-item"><a href="https://news.ycombinator.com/user?id=minimalcrap"><i class="fa fa-hacker-news"></i></a></li>                 
                 </ul> 
             </div><!--//profile-->
-            <a class="btn btn-cta-primary pull-right" href="http://themes.3rdwavemedia.com/" target="_blank"><i class="fa fa-paper-plane"></i> Contact Me</a>              
+            <button type="button" class="btn btn-cta-primary btn-lg pull-right" data-toggle="modal" data-target="#myModal">
+            contact me
+            </button>
+            <!-- <a class="btn btn-cta-primary pull-right" href="http://themes.3rdwavemedia.com/" target="_blank"><i class="fa fa-paper-plane"></i> Contact Me</a>               -->
         </div><!--//container-->
     </header><!--//header-->
     
@@ -400,6 +403,29 @@
                 <small class="copyright">Designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
         </div><!--//container-->
     </footer><!--//footer-->
+
+    <!-- contact form modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+    <div class="modal-content">
+    <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <h4 class="modal-title" id="myModalLabel">hello there...</h4>
+    </div>
+    <div class="modal-body">
+    <div id="contact-me-form" class="form-group">
+        <input type="text" class="form-control" placeholder="Name" id="senders-name"><br/>
+        <input type="text" class="form-control" placeholder="Email" id="senders-email"><br/>
+        <textarea class="form-control" rows="5" placeholder="Message..." id="senders-message"></textarea>
+    </div>    
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">close</button>
+        <button type="button" class="btn btn-cta-primary">send message</button>
+      </div>
+    </div>
+  </div>
+    </div>
  
     <!-- Javascript -->          
     <script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
