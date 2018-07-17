@@ -1,4 +1,4 @@
-<a href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/free-bootstrap-theme-for-web-developers/" target="_blank"><img src="http://themes.3rdwavemedia.com/wp-content/uploads/2014/07/Responsive-HTML5-CSS3-Website-Template-for-Developers.png" alt="Developer Theme" width="750" /></a>
+<a href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/free-bootstrap-theme-for-web-developers/" target="_blank"><img src="https://themes.3rdwavemedia.com/wp-content/uploads/2018/07/free-bootstrap-portfolio-theme-for-web-developers.jpg" alt="Developer Theme" width="750" /></a>
 
 ## Theme Details & Demo
 
@@ -22,13 +22,15 @@ If you'd like to **use the template without the attribution**, you can check our
 
 [Dribbble](https://dribbble.com/Xiaoying)
 
+[Medium](https://medium.com/@3rdwave_themes)
+
 [Linkedin](https://uk.linkedin.com/in/xiaoying)
 
 
 ## Latest Version
 **v2.0** - 17 July 2018
 
-[Changelog](https://themes.3rdwavemedia.com/bootstrap-templates/resume/free-bootstrap-theme-for-web-developers/)
+[Changelog](https://themes.3rdwavemedia.com/bootstrap-templates/resume/free-bootstrap-theme-for-web-developers/?target=changelog)
 
 
 ## Features
