@@ -2,7 +2,7 @@
   "author": "Sascha Depold <sascha@depold.com> (http://depold.com)",
   "name": "jquery-rss",
   "description": "An easy-to-use rss plugin for jquery with templating.",
-  "version": "3.2.0",
+  "version": "3.3.0",
   "homepage": "https://github.com/sdepold/jquery-rss",
   "keywords": [
     "rss",
@@ -26,24 +26,23 @@
   ],
   "main": "src/jquery.rss.js",
   "scripts": {
-    "test": "java -jar dist/compiler.jar src/jquery.rss.js --js_output_file=dist/jquery.rss.min.js && gulp",
-    "postinstall": "node_modules/.bin/bower install"
+    "test": "java -jar utils/compiler.jar src/jquery.rss.js --js_output_file=dist/jquery.rss.min.js && gulp"
   },
   "engines": {
     "node": ">=v0.4.8"
   },
   "dependencies": {},
   "devDependencies": {
-    "bower": "^1.4.1",
-    "buster": "~0.7.0",
-    "gulp": "^3.9.0",
+    "buster": "^0.8.0",
+    "gulp": "^3.9.1",
     "gulp-busterjs": "^1.4.0",
-    "gulp-jscs": "^3.0.2",
+    "gulp-jscs": "^4.0.0",
     "gulp-jshint": "^2.0.0",
-    "gulp-markdown-code-blocks": "^1.1.0",
-    "moment": "^2.10.3",
-    "phantomjs": "^1.9.19",
-    "run-sequence": "^1.1.0"
+    "gulp-markdown-code-blocks": "^1.1.1",
+    "jshint": "^2.9.4",
+    "moment": "^2.14.1",
+    "phantomjs-prebuilt": "^2.1.14",
+    "run-sequence": "^1.2.2"
   },
   "license": "MIT"
 }

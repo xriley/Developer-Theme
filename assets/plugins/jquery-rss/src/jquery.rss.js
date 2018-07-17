@@ -29,11 +29,6 @@
       success: function () {}
     }, options || {});
 
-    // The current SSL certificate is only valid for *.herokuapp.com
-    if (this.options.ssl && (this.options.host === 'www.feedrapp.info')) {
-      this.options.host = 'feedrapp.herokuapp.com';
-    }
-
     this.callback = callback || this.options.success;
   };
 
@@ -93,7 +88,9 @@
           self.options.onData.call(self);
         }
 
-        self.appendEntriesAndApplyEffects($('entries', html.layout), html.entries);
+        var container = $(html.layout).is('entries') ? html.layout : $('entries', html.layout);
+
+        self.appendEntriesAndApplyEffects(container, html.entries);
       }
 
       if (self.effectQueue.length > 0) {
@@ -169,7 +166,7 @@
   };
 
   RSS.prototype.wrapContent = function (content) {
-    if ($.trim(content).indexOf('<') !== 0) {
+    if (($.trim(content).indexOf('<') !== 0)) {
       // the content has no html => create a surrounding div
       return $('<div>' + content + '</div>');
     } else {

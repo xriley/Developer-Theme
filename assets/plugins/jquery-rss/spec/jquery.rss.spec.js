@@ -165,10 +165,26 @@ describe('jquery.rss', function () {
     });
   });
 
+  it('renders when layout template only contains the entries token', function (done) {
+    var $container = $('<table>').appendTo(this.element);
+
+    $container.rss(this.feedUrl, {
+      limit: 1,
+      layoutTemplate: '{entries}',
+      entryTemplate: '<tr><td>{title}</td></tr>'
+    }, function () {
+      var renderedContent = $container[0].outerHTML.replace(/\n/g, '');
+
+      expect(renderedContent).toEqual('<table><tr><td>RSS</td></tr></table>');
+
+      done();
+    });
+  });
+
   describe('ssl', function () {
     it('rewrites the host to herokuapp.com if not specified differently', function (done) {
       this.ajaxStub = this.stub($, 'getJSON', function (apiUrl) {
-        expect(apiUrl).toMatch(/https:\/\/feedrapp\.herokuapp\.com/);
+        expect(apiUrl).toMatch(/https:\/\/www\.feedrapp\.info/);
         done();
       });
 
