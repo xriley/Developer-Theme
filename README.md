@@ -28,7 +28,7 @@ If you'd like to **use the template without the attribution**, you can [buy the 
 
 
 ## Latest Version
-**v2.0** - 17 July 2018
+**v2.1** - 14 March 2019
 
 [Changelog](https://themes.3rdwavemedia.com/bootstrap-templates/resume/free-bootstrap-theme-for-web-developers/?target=changelog)
 

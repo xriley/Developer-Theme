@@ -20,12 +20,12 @@ const DATE_FORMAT1 = "MMM D, YYYY"
  * @param {String} username The GitHub username.
  * @param {Object} options An object containing the following fields:
  *
- *  - `summary_text` (String): The text that appears under the calendar (defaults to: `"Summary of
- *    pull requests, issues opened, and commits made by <username>"`).
- *  - `proxy` (Function): A function that receives as argument an url (string) and should return the proxied url.
- *    The default is using [@izuzak](https://github.com/izuzak)'s [`urlreq`](https://github.com/izuzak/urlreq).
- *  - `global_stats` (Boolean): If `false`, the global stats (total, longest and current streaks) will not be calculated and displayed. By default this is enabled.
- *  - `responsive` (Boolean): If `true`, the graph is changed to scale with the container. Custom CSS should be applied to the element to scale it appropriately. By default this is disabled.
+ *    - `summary_text` (String): The text that appears under the calendar (defaults to: `"Summary of
+ *      pull requests, issues opened, and commits made by <username>"`).
+ *    - `proxy` (Function): A function that receives as argument an url (string) and should return the proxied url.
+ *      The default is using [@izuzak](https://github.com/izuzak)'s [`urlreq`](https://github.com/izuzak/urlreq).
+ *    - `global_stats` (Boolean): If `false`, the global stats (total, longest and current streaks) will not be calculated and displayed. By default this is enabled.
+ *    - `responsive` (Boolean): If `true`, the graph is changed to scale with the container. Custom CSS should be applied to the element to scale it appropriately. By default this is disabled.
  *
  * @return {Promise} A promise returned by the `fetch()` call.
  */
@@ -51,7 +51,8 @@ module.exports = function GitHubCalendar (container, username, options) {
     }).then(body => {
         let div = document.createElement("div");
         div.innerHTML = body;
-        let cal = div.querySelector(".js-contribution-graph");
+        let cal = div.querySelector(".js-yearly-contributions");
+        $(".position-relative h2", cal).remove();
         cal.querySelector(".float-left.text-gray").innerHTML = options.summary_text;
 
         // If 'include-fragment' with spinner img loads instead of the svg, fetchCalendar again
@@ -75,12 +76,12 @@ module.exports = function GitHubCalendar (container, username, options) {
             if (options.global_stats !== false) {
                 let parsed = parse($("svg", cal).outerHTML)
                   , currentStreakInfo = parsed.current_streak
-                                      ? `${formatoid(parsed.current_streak_range[0], DATE_FORMAT2)} – ${formatoid(parsed.current_streak_range[1], DATE_FORMAT2)}`
+                                      ? `${formatoid(parsed.current_streak_range[0], DATE_FORMAT2)} &ndash; ${formatoid(parsed.current_streak_range[1], DATE_FORMAT2)}`
                                       : parsed.last_contributed
                                       ? `Last contributed in ${formatoid(parsed.last_contributed, DATE_FORMAT2)}.`
                                       : "Rock - Hard Place"
                   , longestStreakInfo = parsed.longest_streak
-                                      ? `${formatoid(parsed.longest_streak_range[0], DATE_FORMAT2)} – ${formatoid(parsed.longest_streak_range[1], DATE_FORMAT2)}`
+                                      ? `${formatoid(parsed.longest_streak_range[0], DATE_FORMAT2)} &ndash; ${formatoid(parsed.longest_streak_range[1], DATE_FORMAT2)}`
                                       : parsed.last_contributed
                                       ? `Last contributed in ${formatoid(parsed.last_contributed, DATE_FORMAT2)}.`
                                       : "Rock - Hard Place"
@@ -88,7 +89,7 @@ module.exports = function GitHubCalendar (container, username, options) {
                         "class": "contrib-column contrib-column-first table-column"
                       , html: `<span class="text-muted">Contributions in the last year</span>
                                <span class="contrib-number">${parsed.last_year} total</span>
-                               <span class="text-muted">${formatoid(addSubtractDate.subtract(new Date(), 1, "year"), DATE_FORMAT1)} – ${formatoid(new Date(), DATE_FORMAT1)}</span>`
+                               <span class="text-muted">${formatoid(addSubtractDate.subtract(new Date(), 1, "year"), DATE_FORMAT1)} &ndash; ${formatoid(new Date(), DATE_FORMAT1)}</span>`
                     })
                   , secondCol = $("<div>", {
                         "class": "contrib-column table-column"
