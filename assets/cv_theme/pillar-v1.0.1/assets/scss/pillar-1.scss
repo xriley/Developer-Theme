@@ -1,0 +1,264 @@
+/*! 
+ * Template Name: Pillar - Bootstrap 4 Resume/CV Template for Developers
+ * Version: 1.0.1
+ * Author: Xiaoying Riley
+ * Copyright: 3rd Wave Media
+ * Twitter: @3rdwave_themes
+ * License: Creative Commons Attribution 3.0 License
+ * Website: http://themes.3rdwavemedia.com/
+*/
+
+
+// Define theme colour scheme
+$theme-color-primary: #434E5E;
+
+$theme-text-color-primary: #434E5E;
+$theme-text-color-secondary: lighten($theme-text-color-primary, 10%);
+$theme-text-color-light: lighten($theme-text-color-primary, 40%);
+$theme-border-color:  lighten($theme-text-color-primary, 10%);
+$theme-divider-color: lighten($theme-text-color-primary, 10%);
+$theme-bg-light: #F7F8FA;
+$theme-bg-dark: $theme-text-color-primary;
+
+// Create variables to override the default value for variables used in the Bootstrap SCSS files.
+$theme-colors: (
+  "primary":  $theme-color-primary, 
+  "secondary":  $theme-text-color-secondary, 
+);
+
+//Import Bootstrap
+@import "bootstrap/scss/bootstrap.scss";
+
+
+/*************************** Pillar Styles ****************************/
+body {
+    font-family: 'Roboto', sans-serif;  
+    background: $theme-bg-light;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: $theme-text-color-primary;
+    
+}
+
+.theme-bg-primary {
+	background-color: $theme-color-primary;
+}
+
+.theme-bg-primary-darken {
+	background-color: darken($theme-color-primary, 20%);
+}
+
+a.theme-btn-on-bg, .theme-btn-on-bg {
+	background: rgba(0, 0, 0, 0.2);
+	color: #fff;
+	border: none;
+	&:hover, &:focus, &:active {
+		background: rgba(0, 0, 0, 0.4);
+		border-color: transparent;border: none;
+	}
+	
+}
+
+.progress {
+	@include border-radius(2px);
+}
+
+.theme-progress-bar-dark {
+	background-color: $theme-color-primary;
+	
+}
+
+.resume-wrapper {
+    padding-top: 30px;
+    padding-bottom: 60px;
+	
+}
+
+.resume-wrapper-inner {
+	max-width: 1000px;
+}
+
+.resume-header {
+	background: $theme-color-primary;
+	color: rgba(256, 256, 256, 0.9);
+	height: 220px;
+	.picture {
+		width: 220px;
+	}
+		
+	.name {
+		font-size: 2.25rem;
+		letter-spacing: 0.175rem;	
+		font-weight: 900;
+	}
+	.title {
+		font-size: 1.5rem;
+	}
+	
+	a {
+		color: rgba(256, 256, 256, 0.6);
+		&:hover {
+			color: white;
+		}
+		
+	}
+	
+	
+}
+.resume-social {
+	font-size: 0.875rem;
+
+	.fa-container {
+		font-size: 1rem;
+		display:inline-block;
+		width: 24px;
+		height: 24px;
+		@include border-radius(0.125rem);
+		background: white;
+		color: $theme-color-primary;
+	}
+
+}
+
+.resume-section-title {
+	font-size: 1.25rem;
+	position: relative;
+	color: $theme-color-primary;
+	
+	&:after {
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		height: 1.5px;
+		background: lighten($theme-text-color-primary, 30%);
+	}
+}
+
+.resume-section-content {
+	color: $theme-text-color-secondary;
+}
+
+
+.resume-timeline {
+	padding-left: 2rem;
+	&:before {
+		content: "";
+		display: inline-block;
+	    width: 3px;
+	    height: 100%;
+	    background: lighten($theme-color-primary, 40%);
+	    left: 6px;
+	    top: 4px;
+	    position: absolute;
+	}
+}
+
+.resume-timeline-item {
+	&:before {
+		content: "";
+		display: inline-block;
+		position: absolute;
+		left: -32px;
+		top: 3px;
+		width: 15px;
+		height: 15px;
+		border: 4px solid lighten($theme-color-primary, 10%);
+		background: white;
+		@include border-radius(50%);
+		
+	}
+}
+
+.resume-progress {
+	height: 0.6rem;
+}
+
+.resume-company-name {
+	color: $theme-text-color-secondary;
+	font-size: 0.875rem;
+	font-weight: 500;
+}
+
+.resume-position-time {
+	font-size: 0.875rem;
+	color: $theme-text-color-light;
+}
+
+.resume-position-title {
+	font-size: 1.125rem;
+	color: $theme-text-color-primary;
+}
+
+.resume-timeline-item-desc-heading {
+	font-size: 1rem;
+}
+
+.resume-skills-cat {
+	font-size: 1rem;
+	color: $theme-text-color-primary;
+}
+
+.resume-skill-name {
+	font-size: 0.8125rem;
+	color: $theme-text-color-primary;
+}
+
+.resume-degree {
+	color: $theme-text-color-primary;
+}
+.resume-degree-org {
+	font-size: 0.875rem;
+}
+.resume-degree-time {
+	color: $theme-text-color-light;
+	font-size: 0.875rem;
+}
+
+.resume-awards-list {
+
+}
+
+.resume-award-icon {
+	left: 0;
+	top: 4px;
+	color: $theme-text-color-light;
+}
+
+.resume-award-name {
+	font-weight:bold;
+	color: $theme-text-color-primary;
+}
+
+.resume-award-desc {
+	font-size: 0.875rem;
+}
+
+.resume-lang-name {
+	color: $theme-text-color-primary;
+}
+
+.footer {
+
+	.fa-heart {
+		color: #fb866a;
+	}
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+    .resume-wrapper {
+	    padding-top: 0;
+    }
+	
+	.resume-header {
+		height: auto;
+	}
+	.resume-header .picture {
+		width: 120px;
+		@include border-radius(4px);
+	}
+
+	
+}
