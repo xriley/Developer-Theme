@@ -1,0 +1,37 @@
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { 
+
+    .header {
+        text-align: center;
+    }
+    .header .profile-image {
+        float: none !important;
+        margin: 0 auto;
+    }
+    
+    .header .profile-content {
+        float: none !important;
+        text-align: center;
+    }
+    
+    .header .btn {
+        margin-top: 30px;
+        float: none !important;
+    }
+    .project-image {
+        margin-bottom: 15px;
+    }
+    
+}
+
+
+// Super large devices (large desktops, 1400px and up)
+@media (min-width: 1400px) {
+    .container {
+        width: 1360px;
+        max-width: inherit;
+    }
+}
+
+
+

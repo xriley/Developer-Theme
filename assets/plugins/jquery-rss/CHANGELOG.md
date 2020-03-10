@@ -1,6 +1,10 @@
 ## Change Log
 All notable changes to this project will be documented in this file.
 
+## v3.2.1
+### Fixed
+- Rendering of layoutTemplate `{entries}`
+
 ## v3.2.0
 ### Added
 - Possibility to specify the date locale via moment.js
