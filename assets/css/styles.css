@@ -57,6 +57,9 @@ a:focus {
 
 .btn:focus, a.btn:focus {
   color: #fff;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
 
 a.btn-cta-primary, .btn-cta-primary {
@@ -81,10 +84,13 @@ a.btn-cta-secondary, .btn-cta-secondary {
   text-transform: uppercase;
 }
 
-a.btn-cta-secondary:hover, .btn-cta-secondary:hover {
+a.btn-cta-secondary:hover, a.btn-cta-secondary:not(:disabled):not(.disabled):active:focus, .btn-cta-secondary:hover, .btn-cta-secondary:not(:disabled):not(.disabled):active:focus {
   background: #3893bd;
   border: 1px solid #3893bd;
   color: #fff;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
 
 .text-highlight {

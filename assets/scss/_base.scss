@@ -39,6 +39,7 @@ a {
 
     &:focus {
         color: #fff;
+        @include box-shadow(none);
     }
 }
 
@@ -61,10 +62,11 @@ a.btn-cta-secondary,  .btn-cta-secondary {
     color: #fff;
     font-weight:600;
     text-transform: uppercase;
-    &:hover {
+    &:hover, &:not(:disabled):not(.disabled):active:focus {
         background: darken($btn-color-2, 5%);
         border: 1px solid darken($btn-color-2, 5%);
         color: #fff;
+        @include box-shadow(none);
     }
 }
 
