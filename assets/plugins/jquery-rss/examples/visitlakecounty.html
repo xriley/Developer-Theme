@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jquery.rss accordion example</title>
+
+    <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+    <script src="https://cdn.rawgit.com/timrwood/moment/1.7.2/min/moment.min.js"></script>
+    <script src="../dist/jquery.rss.min.js"></script>
+
+    <script>
+      jQuery(function($) {
+        $("#rss-feeds").rss("https://www.visitlakecounty.org/rss/visitlakecounty_boating_events.xml", {
+          entryTemplate: '<li>[{date}] {title}</li>',
+          dateFormat: "M/D/YY"
+        })
+      })
+    </script>
+  </head>
+  <body>
+    <div>
+      <h1>jquery.rss example</h1>
+      <div id="rss-feeds"></div>
+    </div>
+  </body>
+</html>

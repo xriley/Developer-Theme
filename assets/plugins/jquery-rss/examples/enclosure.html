@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jquery.rss zotero example</title>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css"
+    />
+
+    <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <script src="../dist/jquery.rss.min.js"></script>
+
+    <script>
+      var readTokenFromResponse = function (response, attr) {
+        return $(response)
+          .find("tr th:contains(" + attr + ")")
+          .parent()
+          .find("td")
+          .text();
+      };
+      jQuery(function ($) {
+        $("#rss-feeds").rss("https://www.bug.hr/rss", {
+          entryTemplate: `<div>
+            <h2>{title}</h2>
+            {enclosure}
+          </div><br>`,
+          tokens: {
+            year: function (entry, tokens) {
+              return new Date(entry.publishedDate).getFullYear();
+            },
+            enclosure: function (entry, tokens) {
+              if (entry.enclosure) {
+                return `<img src="${entry.enclosure.url}" />`;
+              }
+              return "";
+            },
+          },
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div>
+      <h1>jquery.rss zotero example</h1>
+      <div id="rss-feeds"></div>
+    </div>
+  </body>
+</html>

@@ -2,7 +2,7 @@
   "author": "Sascha Depold <sascha@depold.com> (http://depold.com)",
   "name": "jquery-rss",
   "description": "An easy-to-use rss plugin for jquery with templating.",
-  "version": "3.3.0",
+  "version": "4.3.0",
   "homepage": "https://github.com/sdepold/jquery-rss",
   "keywords": [
     "rss",
@@ -26,23 +26,34 @@
   ],
   "main": "src/jquery.rss.js",
   "scripts": {
-    "test": "java -jar utils/compiler.jar src/jquery.rss.js --js_output_file=dist/jquery.rss.min.js && gulp"
+    "test": "npm run bundle && mocha test/jquery.rss.test.js -t 10000",
+    "bundle": "node utils/bundle",
+    "lint": "eslint src/**/*.js spec/**/*.js",
+    "prepack": "npm run version:sync && npm run bundle",
+    "version:sync": "node utils/sync-version",
+    "serve": "static &",
+    "watch": "npm run serve && watch 'npm run bundle' ./src"
   },
   "engines": {
     "node": ">=v0.4.8"
   },
-  "dependencies": {},
+  "dependencies": {
+    "vanilla-rss": "^1.4.0"
+  },
   "devDependencies": {
-    "buster": "^0.8.0",
-    "gulp": "^3.9.1",
-    "gulp-busterjs": "^1.4.0",
-    "gulp-jscs": "^4.0.0",
-    "gulp-jshint": "^2.0.0",
-    "gulp-markdown-code-blocks": "^1.1.1",
-    "jshint": "^2.9.4",
+    "chai": "^4.2.0",
+    "eslint": "^6.4.0",
+    "jquery": "^3.4.0",
+    "jsdom": "^15.1.1",
+    "mocha": "^6.2.0",
     "moment": "^2.14.1",
-    "phantomjs-prebuilt": "^2.1.14",
-    "run-sequence": "^1.2.2"
+    "node-fetch": "^2.6.0",
+    "node-static": "^0.7.11",
+    "rollup": "^1.23.1",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^5.1.2",
+    "sinon": "^7.5.0",
+    "watch": "^1.0.2"
   },
   "license": "MIT"
 }

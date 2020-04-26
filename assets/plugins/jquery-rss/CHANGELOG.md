@@ -1,6 +1,24 @@
 ## Change Log
 All notable changes to this project will be documented in this file.
 
+## 4.3.0
+### Changed
+- Add support for sorting of entries (through vanilla-rss 1.4.0)
+
+## 4.2.0
+### Changed
+- Add support for multiple feed URLs (through vanilla-rss 1.3.0)
+
+## 4.1.0
+### Changed
+- Add support for custom feed encoding
+
+## 4.0.0
+### Changed
+- Replace business logic with [Vanilla RSS](https://github.com/sdepold/vanilla-rss)
+### Removed
+- Support for effects (check the effects example for an alternative approach)
+
 ## v3.2.1
 ### Fixed
 - Rendering of layoutTemplate `{entries}`

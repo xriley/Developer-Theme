@@ -1,0 +1,51 @@
+{
+    "responseStatus": 200,
+    "responseDetails": null,
+    "responseData": {
+        "feed": {
+            "feedUrl": "https://www.contentful.com/blog/feed.xml",
+            "title": "Contentful - Blog",
+            "link": "https://www.contentful.com",
+            "description": "Contentful gives you an API-first, cloud-based platform to power your sites and apps, allowing you to create first-class user experiences. Stop burying your content in a CMS, empower it with a content infrastructure.",
+            "author": "",
+            "entries": [
+                {
+                    "title": "Why I’m going to the Ada Lovelace Festival (and you should, too!) ",
+                    "link": "https://www.contentful.com/blog/2019/09/25/you-should-go-to-ada-lovelace/",
+                    "content": "Ada Lovelace was a badass. She wrote one of the first computer programs when almost no women worked in tech — in 1842, to be precise. On Oct. 24–25, the Ada Lovelace Festival will celebrate her contributions and those of women leading tech today with talks, workshops and social activities.\n\nThis year’s event focuses on the topic of ownership. Speakers from leading enterprises — such as Volkswagen, Accenture and SAP — will engage with artists, activists and government officials to discuss who gets to own the future of the digital world, and how more people can be involved.\n\nI’m thrilled to attend this year. Here are a few reasons why.\n",
+                    "contentSnippet": "Ada Lovelace was a badass. She wrote one of the first computer programs when almost no women worked in tech — in 1842, t",
+                    "publishedDate": "2019-09-25T14:00:00.000Z",
+                    "categories": [],
+                    "author": ""
+                },
+                {
+                    "title": "Keeping it cool: How one engineer uses Contentful to control a fridge in Argentina",
+                    "link": "https://www.contentful.com/blog/2019/09/19/contentful-controls-fridge-argentina/",
+                    "content": "We often talk about how Contentful can do anything and everything. It’s flexibility enables you to design your own content models and deliver content to any channel. But what are some of the very edge cases of how to use Contentful? In this post, I’ll describe one unexpected way I used Contentful to solve a very real problem for my father.\n",
+                    "contentSnippet": "We often talk about how Contentful can do anything and everything. It’s flexibility enables you to design your own conte",
+                    "publishedDate": "2019-09-19T10:00:00.000Z",
+                    "categories": [],
+                    "author": ""
+                },
+                {
+                    "title": "Experimentation is now baked into Contentful with new Optimizely app",
+                    "link": "https://www.contentful.com/blog/2019/09/12/experimentation-in-contentful-new-optimizely-app/",
+                    "content": "If you’re a marketer, or you build things for marketers, you know that experimentation is everything. It can help you deliver faster, and can base your decisions on what’s actually bringing you results. Now you can run these experiments on structured content: From today, Optimizely is an officially supported third-party app on Contentful. ",
+                    "contentSnippet": "If you’re a marketer, or you build things for marketers, you know that experimentation is everything. It can help you de",
+                    "publishedDate": "2019-09-12T13:00:00.000Z",
+                    "categories": [],
+                    "author": ""
+                },
+                {
+                    "title": "Turn your sidebar into a sensitive language check, a preview tool, and more with sidebar extensions ",
+                    "link": "https://www.contentful.com/blog/2019/09/11/sidebar-extensions-release-post/",
+                    "content": "The best way to adapt Contentful to your business or content processes is to use our UI extensions. It’s how you can customize your editing experience in the Contentful web app. One of these is sidebar extensions, which allows you to customize your sidebar to create a workspace with the controls you need.  ",
+                    "contentSnippet": "The best way to adapt Contentful to your business or content processes is to use our UI extensions. It’s how you can cus",
+                    "publishedDate": "2019-09-11T12:00:00.000Z",
+                    "categories": [],
+                    "author": ""
+                }
+            ]
+        }
+    }
+}

@@ -28,7 +28,7 @@ If you'd like to **use the template without the footer attribution link**, you c
 
 
 ## Latest Version
-**v2.2** - 16 Oct 2019
+**v2.3** - 26 April 2020
 
 [Changelog](https://themes.3rdwavemedia.com/bootstrap-templates/resume/free-bootstrap-theme-for-web-developers/?target=changelog)
 

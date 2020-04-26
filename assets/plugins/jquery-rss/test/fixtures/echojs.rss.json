@@ -1,0 +1,47 @@
+{
+    "responseStatus": 200,
+    "responseDetails": null,
+    "responseData": {
+        "feed": {
+            "feedUrl": "http://www.echojs.com/rss",
+            "title": "\nEcho JS\n",
+            "link": "\nhttp://www.echojs.com\n",
+            "description": "Description pending",
+            "author": "",
+            "entries": [
+                {
+                    "title": "\nReact Component npm package boilerplate with hooks, typescript, lint, jest and example hot reload\n",
+                    "link": "\nhttps://www.wolesblog.com/react-component-npm-package-boilerplate-with-hooks-typescript-lint-jest-and-example-part-1/\n",
+                    "content": "<a href=\"http://www.echojs.com/news/33780\">Comments</a>",
+                    "contentSnippet": "Comments",
+                    "categories": [],
+                    "author": ""
+                },
+                {
+                    "title": "\nProlog interpreter written in TypeScript\n",
+                    "link": "\nhttps://github.com/kkty/prolog\n",
+                    "content": "<a href=\"http://www.echojs.com/news/33779\">Comments</a>",
+                    "contentSnippet": "Comments",
+                    "categories": [],
+                    "author": ""
+                },
+                {
+                    "title": "\nJavascript library to parse text into flowcharts, sequence graphs, and more...\n",
+                    "link": "\nhttps://github.com/knsv/mermaid\n",
+                    "content": "<a href=\"http://www.echojs.com/news/33778\">Comments</a>",
+                    "contentSnippet": "Comments",
+                    "categories": [],
+                    "author": ""
+                },
+                {
+                    "title": "\nHow I Setup My VIM as Modern Text Editor\n",
+                    "link": "\nhttps://medium.com/@zafarsaleem/how-i-setup-my-vim-as-modern-text-editor-41a93ca4c7a8\n",
+                    "content": "<a href=\"http://www.echojs.com/news/33777\">Comments</a>",
+                    "contentSnippet": "Comments",
+                    "categories": [],
+                    "author": ""
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>GitHub Calendar</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="bag fixed">
+            <h1>Embed your GitHub contributions calendar anywhere!</h1>
+            <div class="calendar">
+                <img src="https://assets-cdn.github.com/images/spinners/octocat-spinner-128.gif" class="spinner"/>
+                <p class="spinner-text monospace">Crunching <a href="https://github.com/IonicaBizau">@IonicaBizau</a>'s contributions just for you.</p>
+            </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/3.0.2/es6-promise.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/0.10.1/fetch.min.js"></script>
+            <script src="../dist/github-calendar.min.js"></script>
+            <script src="js/main.js"></script>
+            <p class="monospace">If you want to know more about this project, <a href="https://github.com/IonicaBizau/github-calendar" target="blank">check out the GitHub repository</a>.</p>
+            <p class="monospace">Embed guide &lt;3</p>
+            <pre>
+&lt;!-- Include the library. --&gt;
+&lt;script
+  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"
+&gt;&lt;/script&gt;
+
+&lt;!-- Optionally, include the theme (if you don't want to struggle to write the CSS) --&gt;
+&lt;link
+   rel="stylesheet"
+   href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+/&gt;
+
+&lt;!-- Prepare a container for your calendar. --&gt;
+&lt;div class="calendar"&gt;
+    &lt;!-- Loading stuff --&gt;
+    Loading the data just for you.
+&lt;/div&gt;
+
+&lt;script&gt;
+    GitHubCalendar(".calendar", "your-username");
+    // or enable responsive functionality
+    GitHubCalendar(".calendar", "your-username", { responsive: true });
+&lt;/script&gt;
+            </pre>
+            <div class="monospace with-heart">
+                <span class="octicon octicon-code"></span> with <span class="octicon octicon-heart"></span> &amp; JS by <a href="http://ionicabizau.net">@IonicaBizau</a>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/highlight.min.js"></script>
+        <script>hljs.highlightBlock(document.querySelector("pre"))</script>
+    </body>
+</html>
