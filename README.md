@@ -35,11 +35,11 @@ If you'd like to **use the template without the footer attribution link**, you c
 
 ## Features
 
--  Fully Responsive
+-  Complete Responsive
 -  HTML5 + CSS3
 -  Built on Bootstrap 4
 -  **SCSS** source files included
--  1000+ FontAwesome 5 icons
+-  1000+ FontAwesome 5 **Icons**
 
 
 ## Credits
