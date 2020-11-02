@@ -1,6 +1,6 @@
 {
   "name": "github-calendar",
-  "version": "2.2.3",
+  "version": "2.2.6",
   "description": "Embed your GitHub contributions calendar anywhere.",
   "main": "lib/index.js",
   "directories": {
@@ -34,10 +34,10 @@
   },
   "homepage": "https://github.com/Bloggify/github-calendar#readme",
   "dependencies": {
-    "add-subtract-date": "^1.0.5",
-    "elly": "^1.0.0",
-    "formatoid": "^1.0.3",
-    "github-calendar-parser": "^1.1.3"
+    "add-subtract-date": "^1.0.15",
+    "elly": "^1.1.11",
+    "formatoid": "^1.2.4",
+    "github-calendar-parser": "^1.1.12"
   },
   "blah": {
     "example": [
@@ -79,7 +79,7 @@
         }
       },
       {
-        "p": "[Here](http://codepen.io/anon/pen/aZmjvZ?editors=1000) you can see this example in action."
+        "p": "[Here](https://bloggify.github.io/github-calendar/example/) you can see this example in action."
       }
     ],
     "description": [
