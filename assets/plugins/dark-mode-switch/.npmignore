@@ -1,0 +1,10 @@
+.github/
+.vscode/
+
+.editorconfig
+.eslintignore
+.gitignore
+
+LICENSE
+README.md
+index.html

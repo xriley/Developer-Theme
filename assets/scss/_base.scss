@@ -16,9 +16,9 @@ h1, h2, h3, h4, h5, h6  {
 a {
     color: $color-2;
     @include transition (all 0.4s ease-in-out);
+    text-decoration: none;
     &:hover {
         text-decoration: underline;
-        color: darken($color, 10%);
         color: darken($color-2, 10%);
     }
     &:focus {
@@ -35,6 +35,9 @@ a {
         margin-right: 5px;
         position: relative;
         top: -2px;
+    }
+    &:hover {
+	    text-decoration: none;
     }
 
     &:focus {
@@ -96,9 +99,9 @@ a.dotted-link {
     background: $smoky-white;
     border-top: 10px solid $color;
     .btn {
-        margin-top: 60px;
         font-weight: bold;
     }
+    
     .profile-image {
         margin-right: 30px;
     }
@@ -141,10 +144,7 @@ a.dotted-link {
 }
 
 /* ======= Sections======= */
-.sections-wrapper {
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
+
 .section {
     margin-bottom: 30px;
     
@@ -399,7 +399,7 @@ a.dotted-link {
     .svg-inline--fa {
 	    margin-right: 3px;
 	    position: relative;
-	    top: -1px;
+	    top: 0;
     }
     
 }

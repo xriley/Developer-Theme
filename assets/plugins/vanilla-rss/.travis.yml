@@ -1,0 +1,12 @@
+script:
+  - "npm run test:coverage"
+  - "npm run test:coverage:report"
+
+notifications:
+  email:
+    - sascha@depold.com
+
+language: node_js
+
+node_js:
+  - 10

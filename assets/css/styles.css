@@ -1,6 +1,6 @@
 /*!   
- * Template Name: Developer - Portfolio Landing Page Template for Developers
- * Version: 2.5
+ * Template Name: Developer - Portfolio Landing Page Bootstrap 5 Template for Developers
+ * Version: Bootstrap 5 v1.0
  * Author: Xiaoying Riley
  * Twitter: @3rdwave_themes
  * Copyright: 3rd Wave Media Ltd.
@@ -27,11 +27,11 @@ a {
   -moz-transition: all 0.4s ease-in-out;
   -ms-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
+  text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
-  color: #5f6b77;
   color: #2d844e;
 }
 
@@ -53,6 +53,10 @@ a:focus {
   margin-right: 5px;
   position: relative;
   top: -2px;
+}
+
+.btn:hover, a.btn:hover {
+  text-decoration: none;
 }
 
 .btn:focus, a.btn:focus {
@@ -129,7 +133,6 @@ a.dotted-link:hover {
 }
 
 .header .btn {
-  margin-top: 60px;
   font-weight: bold;
 }
 
@@ -180,11 +183,6 @@ a.dotted-link:hover {
 }
 
 /* ======= Sections======= */
-.sections-wrapper {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
 .section {
   margin-bottom: 30px;
 }
@@ -457,7 +455,7 @@ a.dotted-link:hover {
 .skills .svg-inline--fa {
   margin-right: 3px;
   position: relative;
-  top: -1px;
+  top: 0;
 }
 
 /* Testimonials section */
@@ -643,6 +641,177 @@ a.dotted-link:hover {
 
 .footer .fa-heart {
   color: #fb866a;
+}
+
+.dark-mode-switch {
+  margin-bottom: 1rem;
+}
+
+.dark-mode-switch .form-switch {
+  display: flex;
+}
+
+.dark-mode-switch label {
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+.dark-mode-switch .form-switch .form-check-input {
+  border-radius: 1em;
+  border-color: #DAE3E7;
+}
+
+.dark-mode-switch .form-check-input:checked {
+  background-color: #54ba4e;
+  border-color: #54ba4e;
+}
+
+.dark-mode-switch .form-check-input:focus {
+  box-shadow: none;
+  border-color: #DAE3E7;
+}
+
+body[data-theme="dark"] {
+  background: #17191c;
+  /* Github Activity Dark Mode */
+  /* Github activity */
+}
+
+body[data-theme="dark"] a:hover {
+  color: #53c47d;
+}
+
+body[data-theme="dark"] a.btn:hover {
+  color: #fff;
+}
+
+body[data-theme="dark"] .dark-mode-switch .form-check-input:focus {
+  border-color: #54ba4e;
+}
+
+body[data-theme="dark"] .header {
+  background: #1e2124;
+  color: rgba(255, 255, 255, 0.9);
+  border-top-color: #1e2124;
+}
+
+body[data-theme="dark"] .header .profile-content .name {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+body[data-theme="dark"] .header .profile-content .desc {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+body[data-theme="dark"] .header .profile-content .social a {
+  background: #2e3238;
+  color: rgba(230, 230, 230, 0.7);
+}
+
+body[data-theme="dark"] .header .profile-content .social a:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+body[data-theme="dark"] .section .section-inner {
+  background: #1e2124;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+body[data-theme="dark"] .section .heading {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+body[data-theme="dark"] .experience .item .title {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+body[data-theme="dark"] .testimonials .item .quote {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+body[data-theme="dark"] .latest .item .title a, body[data-theme="dark"] .projects .item .title a, body[data-theme="dark"] .blog .item .title a {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+body[data-theme="dark"] .latest .item .title a:hover, body[data-theme="dark"] .projects .item .title a:hover, body[data-theme="dark"] .blog .item .title a:hover {
+  color: #fff;
+}
+
+body[data-theme="dark"] .testimonials .item .source .name {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+body[data-theme="dark"] .education .item .title {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+body[data-theme="dark"] .languages .item .title {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+body[data-theme="dark"] .list ul li a, body[data-theme="dark"] .credits ul li a {
+  color: inherit;
+}
+
+body[data-theme="dark"] .experience .item .title .place a {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+body[data-theme="dark"] .experience .item .title .place a:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+body[data-theme="dark"] .aside .subheading {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+body[data-theme="dark"] .gha-header, body[data-theme="dark"] .gha-footer, body[data-theme="dark"] .gha-feed {
+  background: #17191c;
+  border-color: rgba(255, 255, 255, 0.1);
+  color: #3AAA64;
+}
+
+body[data-theme="dark"] .gha-feed a {
+  color: #3AAA64;
+}
+
+body[data-theme="dark"] .gha-header > .gha-github-icon,
+body[data-theme="dark"] .gha-header > .gha-user-info > a,
+body[data-theme="dark"] .gha-header > .gha-user-info > p > a {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+body[data-theme="dark"] .gha-activity {
+  border-color: #333;
+}
+
+body[data-theme="dark"] .gha-gravatar img {
+  border: 3px solid #333;
+  box-shadow: 0 0 0 #ccc;
+}
+
+body[data-theme="dark"] .gha-message-merge {
+  background: #2e3238;
+}
+
+body[data-theme="dark"] .gha-feed small {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+body[data-theme="dark"] .github-graph {
+  background: #17191c;
+}
+
+body[data-theme="dark"] .contrib-number {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+body[data-theme="dark"] .border, body[data-theme="dark"] .contrib-column {
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+body[data-theme="dark"] .text-muted {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 @media (max-width: 767.98px) {

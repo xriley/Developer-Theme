@@ -1,0 +1,13 @@
+{
+  "root": true,
+  "extends": ["eslint:recommended", "prettier"],
+  "plugins": ["ie11", "prettier"],
+  "rules": {
+    "prettier/prettier": ["warn"],
+    "no-undef": "off",
+    "ie11/no-collection-args": ["error"],
+    "ie11/no-for-in-const": ["error"],
+    "ie11/no-loop-func": ["warn"],
+    "ie11/no-weak-collections": ["error"]
+  }
+}

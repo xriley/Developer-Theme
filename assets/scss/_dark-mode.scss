@@ -1,0 +1,161 @@
+.dark-mode-switch {
+    margin-bottom: 1rem;
+    .form-switch{
+	    display: flex;
+    }
+    label {
+	    font-size: 0.875rem;
+        font-weight: bold;
+    }
+    
+    .form-switch .form-check-input {
+	    border-radius: 1em;
+	    border-color: $background;
+    }
+    
+    
+    .form-check-input:checked {
+	    background-color: $btn-color;
+	    border-color: $btn-color;
+    }
+    .form-check-input:focus {
+	    box-shadow: none;
+	    border-color: $background;
+    }
+
+}
+
+
+body[data-theme="dark"] {
+	
+	background: $dm-background;
+	
+	a:hover {
+        color: lighten($color-2, 10%);
+	}
+	
+	a.btn:hover {
+		color: #fff;
+	}
+	
+   .dark-mode-switch {
+	   .form-check-input:focus {
+		    border-color: $btn-color;
+	    }
+   }
+
+  .header {
+	  background: lighten($dm-background, 3%);
+	  color: $dm-text-color;
+	  border-top-color: lighten($dm-background, 3%);
+  }
+  
+  .header .profile-content .name {
+	  color: $dm-text-color;
+  }
+  .header .profile-content .desc {
+	  color: $dm-text-color-secondary;
+  }
+  .header .profile-content .social a {
+	  background: lighten($dm-background, 10%);
+	  color:  darken($dm-text-color-secondary, 10%);
+	  &:hover {
+		  color: $dm-text-color;
+	  }
+  }
+  .section .section-inner {
+	  background: lighten($dm-background, 3%);
+	  color: $dm-text-color-secondary;
+  }
+  
+  .section .heading {
+	  color: $dm-text-color;
+  }
+  .experience .item .title {
+	  color: $dm-text-color;
+  }
+  .testimonials .item .quote {
+	  color: $dm-text-color;
+  }
+  .latest .item .title a, .projects .item .title a , .blog .item .title a{
+	  color: $dm-text-color;
+	  &:hover {
+		  color: #fff;
+	  }
+  }
+  .testimonials .item .source .name {
+	  color: $dm-text-color;
+  }
+  .education .item .title {
+	  color: $dm-text-color;
+  }
+  .languages .item .title {
+	  color: $dm-text-color;
+  }
+  
+  .list ul li a, .credits ul li a {
+	  color: inherit;
+  }
+  .experience .item .title .place a {
+	  color: rgba(256, 256, 256, 0.7);
+	  &:hover {
+		  color: $dm-text-color;
+	  }
+  }
+  .aside .subheading {
+	  color: $dm-text-color;
+  }
+  
+  /* Github Activity Dark Mode */
+  .gha-header, .gha-footer, .gha-feed {
+	  background: $dm-background;
+      border-color: rgba(256, 256, 256, 0.1);
+	  color: $color-2;
+	}
+	
+
+	
+	.gha-feed a {
+	  //background: #161b22;
+	  color: $color-2;
+	}
+	
+	.gha-header > .gha-github-icon,
+	.gha-header > .gha-user-info > a,
+	.gha-header > .gha-user-info > p > a {
+	  color: $dm-text-color;
+	}
+	
+	.gha-activity {
+	  border-color: #333;
+	}
+	
+	.gha-gravatar img {
+	  border: 3px solid #333;
+	  box-shadow: 0 0 0 #ccc;
+	}
+	
+	.gha-message-merge {
+	  background: lighten($dm-background, 10%);
+	}
+	
+	.gha-feed small {
+	  color: $dm-text-color-secondary;
+	}
+	/* Github activity */
+	.github-graph {
+		background: $dm-background;
+	}  
+    .contrib-number {
+	    color: $dm-text-color;
+    }
+    .border, .contrib-column {
+	    border: 1px solid rgba(256, 256, 256, 0.1) !important;
+    }
+    
+    .text-muted {
+	    color: rgba(256, 256, 256, 0.6);
+    }
+
+  
+}

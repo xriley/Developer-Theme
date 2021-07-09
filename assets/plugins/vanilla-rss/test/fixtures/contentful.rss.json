@@ -1,0 +1,24 @@
+{
+    "responseStatus": 200,
+    "responseDetails": null,
+    "responseData": {
+        "feed": {
+            "feedUrl": "https://www.contentful.com/blog/feed.xml",
+            "title": "Contentful - Blog",
+            "link": "https://www.contentful.com",
+            "description": "Contentful gives you an API-first, cloud-based platform to power your sites and apps, allowing you to create first-class user experiences. Stop burying your content in a CMS, empower it with a content infrastructure.",
+            "author": "",
+            "entries": [
+                {
+                    "title": "Why I’m going to the Ada Lovelace Festival (and you should, too!) ",
+                    "link": "https://www.contentful.com/blog/2019/09/25/you-should-go-to-ada-lovelace/",
+                    "content": "<img src='https://images.ctfassets.net/fo9twyrwpveg/WrsWiDkTMO4eia42EICYQ/920ae01f436c8f908eec8ae2c68a4827/IC-1_Launch_digital_products_faster.svg'>Ada Lovelace was a badass. She wrote one of the first computer programs when almost no women worked in tech — in 1842, to be precise. On Oct. 24–25, the Ada Lovelace Festival will celebrate her contributions and those of women leading tech today with talks, workshops and social activities.\n\nThis year’s event focuses on the topic of ownership. Speakers from leading enterprises — such as Volkswagen, Accenture and SAP — will engage with artists, activists and government officials to discuss who gets to own the future of the digital world, and how more people can be involved.\n\nI’m thrilled to attend this year. Here are a few reasons why.\n",
+                    "contentSnippet": "Ada Lovelace was a badass. She wrote one of the first computer programs when almost no women worked in tech — in 1842, t",
+                    "publishedDate": "2019-09-25T14:00:00.000Z",
+                    "categories": [],
+                    "author": ""
+                }
+            ]
+        }
+    }
+}

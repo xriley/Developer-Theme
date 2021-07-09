@@ -4,9 +4,12 @@
 
 **Demo:** https://themes.3rdwavemedia.com/bootstrap-templates/resume/free-bootstrap-theme-for-web-developers/
 
-Developer is a free Bootstrap 4 theme designed to **help developers promote their work**. 
-It can be used as a **professional portal** to your other online portfolios or websites (eg. Linkedin, CoderWall, Blog, GitHub etc) **in a modular fashion**. 
+Developer is a free Bootstrap 5 template designed to **help developers promote their work**. 
+It can be used as a **professional portal** to your other online portfolios or websites (eg. Linkedin, Blog, GitHub etc) **in a modular fashion**. 
 The template comes with all of the **source SCSS files included** so the styling/colour can easily be customised to your taste.
+
+**New Feature:**
+Dark mode
 
 ## Author & License
 
@@ -28,7 +31,7 @@ If you'd like to **use the template without the footer attribution link**, you c
 
 
 ## Latest Version
-**v2.5** - 02 Nov 2020
+**Bootstrap 5 v1.0* - 2021-07-09
 
 [Changelog](https://themes.3rdwavemedia.com/bootstrap-templates/resume/free-bootstrap-theme-for-web-developers/?target=changelog)
 
@@ -37,16 +40,16 @@ If you'd like to **use the template without the footer attribution link**, you c
 
 -  Fully Responsive
 -  HTML5 + CSS3
--  Built on Bootstrap 4
+-  Built on Bootstrap 5
+-  No jQuery dependency
 -  **SCSS** source files included
--  1000+ FontAwesome 5 icons
+-  1000+ FontAwesome icons
 
 
 ## Credits
 - [Bootstrap](http://getbootstrap.com/)
 - [FontAwesome](http://fortawesome.github.io/Font-Awesome/)
-- [jQuery](http://jquery.com/)
 - [GitHub Activity Stream](http://caseyscarborough.com/projects/github-activity/)
 - [GitHub Calendar Plugin](https://github.com/IonicaBizau/github-calendar)
-- [jQuery RSS](https://github.com/sdepold/jquery-rss)
+- [Vanilla RSS](https://github.com/sdepold/jquery-rss)
 - Profile image: [Ben Smith](https://www.flickr.com/photos/dotbenjamin/2577394151)

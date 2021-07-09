@@ -1,0 +1,62 @@
+{
+    "author": "Sascha Depold <sascha@depold.com> (http://depold.com)",
+    "name": "vanilla-rss",
+    "description": "An easy-to-use vanilla JavaScript library to read and render RSS feeds.",
+    "version": "1.4.0",
+    "homepage": "https://github.com/sdepold/vanilla-rss",
+    "keywords": [
+        "rss",
+        "vanilla",
+        "parsing",
+        "render",
+        "atom",
+        "xml"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/sdepold/vanilla-rss.git"
+    },
+    "contributors": [
+        {
+            "name": "Sascha Depold",
+            "email": "sascha@depold.com"
+        }
+    ],
+    "main": "src/rss.js",
+    "scripts": {
+        "test": "npm run prepack && npm run test:run",
+        "test:run": "mocha test/*.test.js -t 10000",
+        "test:coverage": "nyc yarn test",
+        "test:coverage:report": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
+        "bundle": "node utils/bundle",
+        "lint": "eslint src/**/*.js test/**/*.js",
+        "prepack": "npm run version:sync && npm run bundle",
+        "version:sync": "node utils/sync-version",
+        "serve": "static &",
+        "watch": "npm run serve && watch 'npm run bundle' ./src"
+    },
+    "engines": {
+        "node": ">=v0.4.8"
+    },
+    "dependencies": {
+        "ballyhoo": "^2.0.2"
+    },
+    "devDependencies": {
+        "chai": "^4.2.0",
+        "codecov": "^3.6.1",
+        "eslint": "^6.4.0",
+        "jsdom": "^15.1.1",
+        "mocha": "^6.2.0",
+        "moment": "^2.14.1",
+        "node-fetch": "^2.6.0",
+        "node-static": "^0.7.11",
+        "nyc": "^14.1.1",
+        "rollup": "^1.22.0",
+        "rollup-plugin-node-resolve": "^5.2.0",
+        "rollup-plugin-terser": "^5.1.2",
+        "rollup-plugin-uglify": "^6.0.3",
+        "sinon": "^7.5.0",
+        "watch": "^1.0.2"
+    },
+    "license": "MIT"
+}

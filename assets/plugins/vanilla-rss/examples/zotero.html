@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RSS zotero example</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div>
+      <h1>RSS accordion example</h1>
+      <div id="rss-feeds"></div>
+    </div>
+    <script src="../dist/rss.global.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+      window.onload = function() {
+        const rss = new RSS(
+          document.querySelector("#rss-feeds"),
+          "https://api.zotero.org/groups/308781/items?format=atom",
+          {
+            entryTemplate:
+              "<ul><li>Title: {title}</li><li>Author: {author}</li><li>Year: {year}</li></ul><br>",
+            tokens: {
+              year: function(entry, tokens) {
+                return new Date(entry.publishedDate).getFullYear();
+              }
+            }
+          }
+        );
+        rss.render().then(() => console.log("cool"));
+      };
+    </script>
+  </body>
+</html>

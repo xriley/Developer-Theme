@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RSS accordion example</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div>
+      <h1>RSS Sorting example</h1>
+      <form>
+        <label>
+          Field
+          <select id="fieldSelect">
+            <option value="">Default sorting</option>
+            <option value="author">Author</option>
+            <option value="publishedDate">Published Date</option>
+            <option value="title">Title</option>
+          </select>
+        </label>
+
+        <label>
+          Order
+          <select id="orderSelect">
+            <option value="">Ascending</option>
+            <option value="-">Descending</option>
+          </select>
+        </label>
+      </form>
+      <div id="rss-feeds"></div>
+    </div>
+    <script src="../dist/rss.global.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+      function renderFeed() {
+        const order = [
+          document.querySelector("#orderSelect").value,
+          document.querySelector("#fieldSelect").value
+        ]
+          .filter(function(e) {
+            return !!e;
+          })
+          .join("");
+
+        document.querySelector("#rss-feeds").innerHTML = "";
+        new RSS(
+          document.querySelector("#rss-feeds"),
+          "http://www.ebaytechblog.com/feed",
+          {
+            order,
+            limit: 15,
+            entryTemplate:
+              '<li>Author: {author}<br>Date: {date}<br> {title}<br>{shortBodyPlain}</li>'
+          }
+        ).render();
+      }
+
+      window.onload = function() {
+        renderFeed();
+
+        document
+          .querySelectorAll("#fieldSelect,#orderSelect")
+          .forEach(function(field) {
+            field.addEventListener("change", renderFeed);
+          });
+      };
+    </script>
+  </body>
+</html>

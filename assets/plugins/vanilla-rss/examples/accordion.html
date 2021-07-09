@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RSS accordion example</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div>
+      <h1>RSS accordion example</h1>
+      <div id="rss-feeds"></div>
+    </div>
+    <script src="../dist/rss.global.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+      window.onload = function() {
+        const rss = new RSS(
+          document.querySelector("#rss-feeds"),
+          "https://partnernetwork.ebay.de/epn-blog?format=rss",
+          {
+            limit: 15,
+            tokens: {
+              showClass: (entry, tokens) => (tokens.index === 0 ? "show" : "")
+            },
+            layoutTemplate:
+              '<div class="accordion" id="accordionExample">{entries}</div>',
+            entryTemplate: `<div class="card">
+              <div class="card-header" id="heading-{index}">
+                <h2 class="mb-0">
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-{index}" aria-expanded="true" aria-controls="collapse-{index}">
+                    {title}
+                  </button>
+                </h2>
+              </div>
+  
+              <div id="collapse-{index}" class="collapse {showClass}" aria-labelledby="heading-{index}" data-parent="#accordionExample">
+                <div class="card-body">
+                  {bodyPlain}
+                </div>
+              </div>
+            </div>`
+          }
+        );
+
+        rss.render().then(() => console.log("cool"));
+      };
+    </script>
+  </body>
+</html>

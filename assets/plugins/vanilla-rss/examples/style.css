@@ -1,0 +1,20 @@
+body {
+  font-size: 12px;
+  padding: 1em;
+}
+
+h1 {
+  font-size: 1.75rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+
+.card-header {
+  padding: 0.5em;
+}
+
+.btn {
+  text-align: left;
+}

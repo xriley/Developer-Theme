@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dark Mode Switch</title>
+  <meta name="description" content="Add a dark-mode theme toggle with a Bootstrap Custom Switch">
+
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>🌓</text></svg>">
+  
+  <meta property="og:site_name" content="GitHub">
+  <meta property="og:image"
+    content="https://repository-images.githubusercontent.com/194995309/38db8f80-9db7-11e9-998f-43f2a26d9e0b">
+  <meta property="og:title" content="dark-mode-switch">
+  <meta property="og:description" content="Add a dark-mode theme toggle with a Bootstrap Custom Switch">
+  <meta property="og:url" content="https://coliff.github.io/dark-mode-switch/">
+  <link rel="author" href="https://christianoliff.com/">
+  <meta name="twitter:creator" content="@christianoliff">
+  <meta name="monetization" content="$ilp.uphold.com/Epqzn3YGr2MB">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css">
+
+  <!-- IE 11 polyfill for CSS and Custom Properties -->
+  <script
+    nomodule>window.MSInputMethodContext && document.documentMode && document.write('<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-ie11@5/css/bootstrap-ie11.min.css"><script src="https://cdn.jsdelivr.net/npm/ie11-custom-properties@4/ie11CustomProperties.min.js"><\/script>');</script>
+
+  <link rel="stylesheet" href="dark-mode.css">
+
+</head>
+
+<body class="bg-white text-center d-flex h-100">
+
+  <div class="container d-flex p-3 mx-auto w-100 flex-column">
+    <header class="mb-auto">
+      <div class="float-md-start fw-bold fs-5">Dark Mode Switch</div>
+      <nav class="nav justify-content-center float-md-end">
+        <a class="nav-link active" href="https://coliff.github.io/dark-mode-switch/">Home</a>
+        <a class="nav-link" href="https://github.com/coliff/dark-mode-switch" target="_blank">GitHub</a>
+        <div class="nav-link">
+
+          <div class="form-check form-switch">
+            <input type="checkbox" class="form-check-input" id="darkSwitch">
+            <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
+          </div>
+          <script src="dark-mode-switch.min.js"></script>
+
+        </div>
+      </nav>
+    </header>
+
+    <main role="main">
+      <h1>🌓 Dark Mode Switch</h1>
+      <p class="lead">Add a dark-mode theme switch with a Bootstrap Custom Switch</p>
+      <ul class="list-unstyled">
+        <li>&middot; Uses local storage to save preference</li>
+        <li>&middot; Only 383 Bytes minified and gzipped!</li>
+      </ul>
+      <p>
+        <a href="https://github.com/coliff/dark-mode-switch" target="_blank" rel="noopener"
+          class="btn btn-lg btn-secondary">
+          Learn more
+        </a>
+      </p>
+    </main>
+
+    <footer class="mt-auto">
+      <p>&copy; 2021</p>
+    </footer>
+
+  </div>
+</body>
+
+</html>
