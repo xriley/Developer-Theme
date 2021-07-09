@@ -66,14 +66,14 @@
       "sct" : 1
     },
     "\/styles.scss" : {
-      "aP" : 0,
+      "aP" : 1,
       "bl" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/Users\/Riley\/Sites\/htdocs\/developer-theme-bs4\/developer-theme-git\/assets\/css\/styles.css",
+      "oAP" : "\/Users\/Riley\/Sites\/htdocs\/developer-theme-bs5\/developer-theme-git\/assets\/css\/styles.css",
       "oF" : 6,
       "oS" : 1,
       "pg" : 0,
@@ -88,7 +88,7 @@
   },
   "projectAttributes" : {
     "creationDate" : 553511735,
-    "displayValue" : "Developer Theme BS4 Git",
+    "displayValue" : "Developer Theme BS5 Git",
     "displayValueWasSetByUser" : 1,
     "iconImageName" : "meme-punDog",
     "iconImageWasSetByUser" : 0

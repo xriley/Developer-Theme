@@ -61,8 +61,6 @@ a:focus {
 
 .btn:focus, a.btn:focus {
   color: #fff;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
   box-shadow: none;
 }
 
@@ -92,8 +90,6 @@ a.btn-cta-secondary:hover, a.btn-cta-secondary:not(:disabled):not(.disabled):act
   background: #3893bd;
   border: 1px solid #3893bd;
   color: #fff;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
   box-shadow: none;
 }
 
@@ -105,10 +101,6 @@ a.btn-cta-secondary:hover, a.btn-cta-secondary:not(:disabled):not(.disabled):act
   background: #3AAA64;
   font-size: 12px;
   color: #fff;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  -o-border-radius: 2px;
   border-radius: 2px;
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
@@ -161,10 +153,6 @@ a.dotted-link:hover {
   width: 36px;
   height: 36px;
   display: inline-block;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
   border-radius: 50%;
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
@@ -389,8 +377,6 @@ a.dotted-link:hover {
 .ghfeed *,
 .ghfeed *:before,
 .ghfeed *:after {
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
   box-sizing: content-box;
 }
 
@@ -648,6 +634,7 @@ a.dotted-link:hover {
 }
 
 .dark-mode-switch .form-switch {
+  display: -webkit-flex;
   display: flex;
 }
 
