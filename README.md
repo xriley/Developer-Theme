@@ -8,8 +8,9 @@ Developer is a free Bootstrap 5 template designed to **help developers promote t
 It can be used as a **professional portal** to your other online portfolios or websites (eg. Linkedin, Blog, GitHub etc) **in a modular fashion**. 
 The template comes with all of the **source SCSS files included** so the styling/colour can easily be customised to your taste.
 
-**New Feature:**
-Dark mode
+**New Feature - Dark Mode**
+<a href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/free-bootstrap-theme-for-web-developers/" target="_blank"><img src="https://themes.3rdwavemedia.com/wp-content/uploads/2021/07/developer-template-BS5-darkmode.gif" alt="Developer Theme Dark Mode" width="750" /></a>
+
 
 ## Author & License
 
