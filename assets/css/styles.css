@@ -1,6 +1,6 @@
 /*!   
  * Template Name: Developer - Portfolio Landing Page Bootstrap 5 Template for Developers
- * Version: Bootstrap 5 v1.0
+ * Version: Bootstrap 5 v2.0
  * Author: Xiaoying Riley
  * Twitter: @3rdwave_themes
  * Copyright: 3rd Wave Media Ltd.
@@ -634,7 +634,6 @@ a.dotted-link:hover {
 }
 
 .dark-mode-switch .form-switch {
-  display: -webkit-flex;
   display: flex;
 }
 
