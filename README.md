@@ -32,7 +32,7 @@ If you'd like to **use the template without the footer attribution link**, you c
 
 
 ## Latest Version
-**Bootstrap 5 v2.0* - 2022-06-08
+**Bootstrap 5 v2.0* - 2023-06-25
 
 [Changelog](https://themes.3rdwavemedia.com/bootstrap-templates/resume/free-bootstrap-theme-for-web-developers/?target=changelog)
 
@@ -40,9 +40,9 @@ If you'd like to **use the template without the footer attribution link**, you c
 ## Features
 
 -  Fully Responsive
+-  Light/Dark Mode
 -  HTML5 + CSS3
 -  Built on Bootstrap 5
--  No jQuery dependency
 -  **SCSS** source files included
 -  FontAwesome icons
 
