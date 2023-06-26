@@ -32,7 +32,7 @@ If you'd like to **use the template without the footer attribution link**, you c
 
 
 ## Latest Version
-**Bootstrap 5 v2.1* - 2023-06-26
+**Bootstrap 5 v3.1* - 2023-06-26
 
 [Changelog](https://themes.3rdwavemedia.com/bootstrap-templates/resume/free-bootstrap-theme-for-web-developers/?target=changelog)
 
