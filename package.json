@@ -1,0 +1,15 @@
+{
+  "name": "developer-theme",
+  "version": "1.0.0",
+  "description": "<a href=\"https://themes.3rdwavemedia.com/bootstrap-templates/resume/free-bootstrap-theme-for-web-developers/\" target=\"_blank\"><img src=\"https://themes.3rdwavemedia.com/wp-content/uploads/2018/07/free-bootstrap-portfolio-theme-for-web-developers.jpg\" alt=\"Developer Theme\" width=\"750\" /></a>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "github-activity-feed": "^0.3.0"
+  }
+}

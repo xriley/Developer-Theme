@@ -1,0 +1,8 @@
+/* Github Activity Stream - v0.3.0 
+ * https://github.com/caseyscarborough/github-activity 
+ *
+ * Copyright 2015-2021 Casey Scarborough 
+ * MIT License
+ */
+
+.gha-feed,.gha-footer,.gha-header{background:#161b22;border-color:#333;color:#c9d1d9}.gha-feed a{background:#161b22;color:#388bfd}.gha-header>.gha-github-icon,.gha-header>.gha-user-info>a,.gha-header>.gha-user-info>p>a{color:#c9d1d9}.gha-activity{border-color:#333}.gha-gravatar img{border:3px solid #333;box-shadow:0 0 0 #ccc}.gha-message-merge{background:#242930}.gha-feed small{color:#8b949e}
