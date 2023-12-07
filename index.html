@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Bootstrap Portfolio/Resume Theme for Developers</title>
+    <title>Portfolio</title>
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,6 +27,10 @@
 
     <!-- Theme CSS -->  
     <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- for github repos -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://gitlist.himdek.com/GitHubList.js"></script>
     
 </head> 
 
@@ -36,16 +40,16 @@
         <div class="container">     
 	        <div class="row align-items-center">
 			    <div class="col">         
-		            <img class="profile-image img-fluid float-start rounded-circle" src="assets/images/profile.png" alt="profile image" />
+		            <img class="profile-image img-fluid float-start rounded-circle" width="150" height="150" src="assets/images/profile.jpg" alt="profile image" />
 		            <div class="profile-content">
-		                <h1 class="name">James Lee</h1>
-		                <h2 class="desc">Web App Developer</h2>   
+		                <h1 class="name">Noman Arshad</h1>
+		                <h2 class="desc">Full Stack Engineer | Java | Angular</h2>   
 		                <ul class="social list-inline">
-		                    <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
-		                    <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-		                    <li class="list-inline-item"><a href="#"><i class="fab fa-github-alt"></i></a></li>    
-		                    <li class="list-inline-item"><a href="#"><i class="fab fa-stack-overflow"></i></a></li>   
-		                    <li class="list-inline-item last-item"><a href="#"><i class="fab fa-codepen"></i></a></li>                
+		                    <li class="list-inline-item"><a href="https://twitter.com/nomanarshad22"><i class="fab fa-twitter"></i></a></li>
+		                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/noman-arshad-20/"><i class="fab fa-linkedin-in"></i></a></li>
+		                    <li class="list-inline-item"><a href="https://github.com/nomanarshad20"><i class="fab fa-github-alt"></i></a></li>    
+		                    <li class="list-inline-item"><a href="https://stackoverflow.com/users/7065433/noman-arshad"><i class="fab fa-stack-overflow"></i></a></li>   
+		                    <!-- <li class="list-inline-item last-item"><a href="#"><i class="fab fa-codepen"></i></a></li>                 -->
 		                </ul> 
 		            </div><!--//profile-->
 			    </div><!--//col-->
@@ -56,7 +60,7 @@
 							<label class="custom-control-label" for="darkSwitch">Dark Mode</label>
 						</div>
 			        </div><!--//dark-mode-switch-->
-	                <a class="btn btn-cta-primary" href="https://themes.3rdwavemedia.com/" target="_blank"><i class="fas fa-paper-plane"></i> Contact Me</a>        
+	                <a class="btn btn-cta-primary" href="https://www.linkedin.com/in/noman-arshad-20/" target="_blank"><i class="fas fa-paper-plane"></i> Contact Me</a>        
 	            </div><!--//col-->
 	        </div><!--//row-->         
         </div><!--//container-->
@@ -69,7 +73,7 @@
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">About Me</h2>
                         <div class="content">
-                            <p>Write a brief intro about yourself. It's a good idea to include your personal interests and hobbies as well. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec. Commodo ligula eget dolor. Aenean massa.</p>
+                            <p>Passionate Software Engineer in Java, seeking a challenging and competitive position to enhance knowledge and skills in software development. Skilled in design, development, and implementation of Client-Server/Web/Enterprise applications using Java/J2EE and the Springs framework.</p>
                          
                         </div><!--//content-->
                     </div><!--//section-inner-->                 
@@ -204,6 +208,8 @@
                         </div><!--//content-->  
                     </div><!--//section-inner-->                 
                 </section><!--//section-->
+
+
                 <section class="github section">
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">My GitHub</h2>
@@ -220,6 +226,29 @@
                         
                     </div><!--//secton-inner-->
                 </section><!--//section-->
+
+                <section class="github section">
+                    <!-- https://www.twilik.com/embed-your-medium-blog -->
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">My Article Feed</h2>
+                        <div id="retainable-rss-embed" data-rss="https://medium.com/feed/@nomanarshad20/"
+                        data-maxcols="1" 
+                        data-layout="grid" 
+                        data-poststyle="external" 
+                        data-readmore="Read the rest" 
+                        data-buttonclass="btn btn-primary" 
+                        data-offset="-100">
+                    </div><!--//secton-inner-->
+                </section><!--//section-->
+
+
+
+                
+
+
+
+
+
             </div><!--//primary-->
             <div class="secondary col-lg-4 col-12">
                  <aside class="info aside section">
@@ -227,9 +256,9 @@
                         <h2 class="heading sr-only">Basic Information</h2>
                         <div class="content">
                             <ul class="list-unstyled">
-                                <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>San Francisco, US</li>
-                                <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a href="#">jameslee@website.com</a></li>
-                                <li><i class="fas fa-link"></i><span class="sr-only">Website:</span><a href="#">https://www.website.com</a></li>
+                                <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>Park view city, Lahore, Pakistan</li>
+                                <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a href="#">nomanarshad20@gmail.com</a></li>
+                                <li><i class="fas fa-link"></i><span class="sr-only">Website:</span><a href="#">https://www.stingraysharp.com</a></li>
                             </ul>
                         </div><!--//content-->  
                     </div><!--//section-inner-->                 
@@ -273,7 +302,7 @@
 									</div><!--//level-bar-->                                  
                                 </div><!--//item-->
                                 
-                                <p><a class="more-link" href="#"><i class="fas fa-external-link-alt"></i>More on GitHub</a></p> 
+                                <p><a class="more-link" href="https://www.linkedin.com/in/noman-arshad-20"><i class="fas fa-external-link-alt"></i>More on LinkedIn</a></p> 
                             </div>              
                         </div><!--//content-->  
                     </div><!--//section-inner-->                 
@@ -285,12 +314,14 @@
                         <div class="content">
                             <div class="item">
                                 <blockquote class="quote">                                  
-                                    <p><i class="fas fa-quote-left"></i>James is an excellent software engineer and he is passionate about what he does. You can totally count on him to deliver your projects!</p>
+                                    <p><i class="fas fa-quote-left"></i>I highly recommend Noman Arsah for any professional opportunity. I had the pleasure of supervising Noman for over 5 years, and during that time, I witnessed his remarkable growth and dedication. He consistently took on additional responsibilities, stepping into a team lead role to drive productivity and success.
+                                        Noman's work ethic and sincerity are truly commendable. Even during challenging periods, he willingly put in extra hours, including late nights and weekends, to ensure project completion and success. His enthusiasm for adopting new tools and technologies is infectious and reflects his commitment to staying ahead in the industry.
+                                        I have no doubt that Noman will continue to excel in his career. His professionalism, hard work, and eagerness to learn make him an invaluable asset to any organization. I wish him the best of luck in all his future endeavors.</p>
                                 </blockquote>                
-                                <p class="source"><span class="name">Tim Adams</span><br /><span class="title">Curabitur commodo</span></p>                                                             
+                                <p class="source"><span class="name">Munir Akhtar</span><br /><span class="title">Geschäftsführer / CEO bei SOCO engineers GmbH, Munich, Germany</span></p>                                                             
                             </div><!--//item-->
                             
-                            <p><a class="more-link" href="#"><i class="fas fa-external-link-alt"></i>More on Linkedin</a></p> 
+                            <p><a class="more-link" href="https://www.linkedin.com/in/noman-arshad-20"><i class="fas fa-external-link-alt"></i>More on Linkedin</a></p> 
                             
                         </div><!--//content-->
                     </div><!--//section-inner-->
@@ -300,13 +331,13 @@
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Education</h2>
                         <div class="content">
-                            <div class="item">                      
+                            <!-- <div class="item">                      
                                 <h3 class="title"><i class="fas fa-graduation-cap"></i> MSc Computer Science</h3>
                                 <h4 class="university">University College London <span class="year">(2018-2019)</span></h4>
-                            </div><!--//item-->
+                            </div> -->
                             <div class="item">
                                 <h3 class="title"><i class="fas fa-graduation-cap"></i> BSc Computer Science</h3>
-                                <h4 class="university">University of Bristol <span class="year">(2014-2018)</span></h4>
+                                <h4 class="university">University of Sargodha Lahore<span class="year">(2013-2017)  3.5cgpa</span></h4>
                             </div><!--//item-->
                         </div><!--//content-->
                     </div><!--//section-inner-->
@@ -319,36 +350,48 @@
                             <ul class="list-unstyled">
                                 <li class="item">
                                     <span class="title"><strong>English:</strong></span>
-                                    <span class="level">Native Speaker <br class="visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> </span>
+                                    <span class="level">Fluent Speaker <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> </span>
                                 </li><!--//item-->
                                 <li class="item">
-                                    <span class="title"><strong>Spanish:</strong></span>
-                                    <span class="level">Professional Proficiency <br class="visible-sm visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star-half"></i></span>
+                                    <span class="title"><strong>German:</strong></span>
+                                    <span class="level">Learning <i class="fas fa-star"></i></span>
                                 </li><!--//item-->
                             </ul>
                         </div><!--//content-->
                     </div><!--//section-inner-->
                 </aside><!--//section-->
                 
-                <aside class="blog aside section">
+
+                <!-- 
+                    <aside class="blog aside section">
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Latest Blog Posts</h2>
-                        <p>You can use Sascha Depold's <a href="https://github.com/sdepold/jquery-rss" target="_blank">Vanilla RSS plugin</a> to pull in your blog post feeds.</p>
+                        <p>You can use Sascha Depold's  <a href="https://github.com/sdepold/jquery-rss" target="_blank">Vanilla RSS plugin</a> to pull in your blog post feeds.</p>
                         <div id="rss-feeds" class="content">
+                        </div>
+                    </div>
+                </aside>
+                  -->
 
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
+
+                
+                  
+
+
+
+
+
                 
                 <aside class="list music aside section">
                     <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Favourite coding music</h2>
+                        <h2 class="heading">Depth Exploration</h2>
                         <div class="content">
                             <ul class="list-unstyled">
-                                <li><i class="fas fa-headphones"></i> <a href="#">Etiam hendrerit urna nunc</a></li>
-                                <li><i class="fas fa-headphones"></i> <a href="#">Ut sollicitudin in mauris non auctor</a></li>
-                                <li><i class="fas fa-headphones"></i> <a href="#">Etiam hendrerit urna nunc</a></li>
-                                <li><i class="fas fa-headphones"></i> <a href="#">Duis et felis bibendum</a></li>
+                                <li><i class="fas fa-solid fa-laptop-code"></i> <a href="#">Amazon: Route 53</a></li>
+                                <li><i class="fas fa-solid fa-laptop-code"></i> <a href="#">Amazon: EC2</a></li>
+                                <li><i class="fas fa-solid fa-laptop-code"></i> <a href="#">Amazon: Gloud Flair</a></li>
+                                <li><i class="fas fa-solid fa-laptop-code"></i> <a href="#">Amazon: Shared Responsibilities</a></li>
+                                <li><i class="fas fa-solid fa-code"></i> <a href="#">Spring: Redis | Zuul | API Gateways</a></li>
                             </ul>
                         </div><!--//content-->
                     </div><!--//section-inner-->
@@ -403,11 +446,15 @@
         </div><!--//row-->
     </div><!--//masonry-->
     
+
+    
+
+
     <!-- ******FOOTER****** --> 
     <footer class="footer">
         <div class="container text-center">
                 <!--/* This template is free as long as you keep the attribution link below. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
-                <small class="copyright">Designed with <span class="sr-only">love</span><i class="fas fa-heart"></i> by <a href="https://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+                <small class="copyright">Designed with <span class="sr-only">love</span><i class="fas fa-heart"></i>by <a href="https://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for Slow developers</small>
         </div><!--//container-->
     </footer><!--//footer-->
  
@@ -422,7 +469,9 @@
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
     <script type="text/javascript" src="assets/plugins/github-activity/src/github-activity.js"></script>
     <!-- custom js -->
-    <script type="text/javascript" src="assets/js/main.js"></script>            
+    <script type="text/javascript" src="assets/js/main.js"></script>     
+    
+    <script src="https://www.twilik.com/assets/retainable/rss-embed/retainable-rss-embed.js"></script>
 </body>
 </html> 
 
